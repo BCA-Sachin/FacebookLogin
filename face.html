@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook – log in or sign up</title>
+    <style>
+        body {
+            background: #f0f2f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-box {
+            background: #fff;
+            padding: 32px 24px 24px 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 360px;
+            margin-left: 40px;
+        }
+        .login-box input[type="text"],
+        .login-box input[type="password"] {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 12px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 17px;
+        }
+        .login-box button {
+            width: 100%;
+            padding: 14px;
+            background: #1877f3;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .login-box button:hover {
+            background: #166fe5;
+        }
+        .login-box .forgot {
+            display: block;
+            text-align: center;
+            margin: 16px 0 12px 0;
+            color: #1877f3;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .login-box .divider {
+            border-bottom: 1px solid #dadde1;
+            margin: 20px 0;
+        }
+        .login-box .create-account {
+            background: #42b72a;
+            margin-top: 10px;
+            font-size: 17px;
+        }
+        .login-box .create-account:hover {
+            background: #36a420;
+        }
+        .logo {
+            font-size: 48px;
+            color: #1877f3;
+            font-weight: bold;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+            text-align: left;
+        }
+        .desc {
+            font-size: 24px;
+            margin-bottom: 40px;
+            color: #1c1e21;
+            max-width: 400px;
+        }
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+            .desc {
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            .login-box {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div class="logo">facebook</div>
+            <div class="desc">Facebook helps you connect and share with the people in your life.</div>
+        </div>
+        <div class="login-box">
+            <form>
+                <input type="text" placeholder="Email address or phone number" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+                <a href="#" class="forgot">Forgotten password?</a>
+                <div class="divider"></div>
+                <button type="button" class="create-account">Create New Account</button>
+            </form>
+        </div>
